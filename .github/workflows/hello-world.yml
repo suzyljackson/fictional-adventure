@@ -1,0 +1,11 @@
+name: hello-world
+
+on: push
+
+jobs: 
+  hello-world-job: 
+    runs-on: linux-runner
+    steps: 
+      - name: check out repository code
+        uses: actions/checkout@v4
+      - run: echo "$(cat hellow_world.txt)"
